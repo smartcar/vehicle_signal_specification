@@ -19,3 +19,113 @@ Diagnostics.DTCList:
   datatype: string[]
   type: sensor
   description: List of currently active DTCs formatted according OBD II (SAE-J2012DA_201812) standard ([P|C|B|U]XXXXX )
+
+
+Diagnostics.Systems:
+  type: branch
+  description: "Collection of vehicle systems and their diagnostic statuses"
+
+Diagnostics.Systems.ABS:
+    type: branch
+    description: "Anti-lock Braking System (ABS)"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.ABS
+
+Diagnostics.Systems.ActiveSafety:
+    type: branch
+    description: "Active safety systems (e.g. collision avoidance)"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.ActiveSafety
+
+Diagnostics.Systems.Airbag:
+    type: branch
+    description: "Airbag system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.Airbag
+
+Diagnostics.Systems.BrakeFluid:
+    type: branch
+    description: "Brake fluid level or pressure system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.BrakeFluid
+
+Diagnostics.Systems.DriverAssistance:
+    type: branch
+    description: "Driver assistance systems (e.g. lane keeping)"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.DriverAssistance
+
+Diagnostics.Systems.Emissions:
+    type: branch
+    description: "Emissions control system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.Emissions
+
+Diagnostics.Systems.Engine:
+    type: branch
+    description: "Combustion engine system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.Engine
+
+Diagnostics.Systems.EvBatteryConditioning:
+    type: branch
+    description: "EV battery conditioning system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.EvBatteryConditioning
+
+Diagnostics.Systems.EvCharging:
+    type: branch
+    description: "EV charging system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.EvCharging
+
+Diagnostics.Systems.EvDriveUnit:
+    type: branch
+    description: "EV drive unit"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.EvDriveUnit
+
+Diagnostics.Systems.EvHvBattery:
+    type: branch
+    description: "High-voltage battery in EV"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.EvHvBattery
+
+Diagnostics.Systems.Lighting:
+    type: branch
+    description: "Vehicle lighting system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.Lighting
+
+Diagnostics.Systems.MalfunctionIndicatorLamp:
+    type: branch
+    description: "Malfunction Indicator Lamp (MIL) system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.MalfunctionIndicatorLamp
+
+Diagnostics.Systems.OilLife:
+    type: branch
+    description: "Engine oil life monitoring"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.OilLife
+
+Diagnostics.Systems.OilPressure:
+    type: branch
+    description: "Engine oil pressure system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.OilPressure
+
+Diagnostics.Systems.OilTemperature:
+    type: branch
+    description: "Engine oil temperature system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.OilTemperature
+
+Diagnostics.Systems.Telematics:
+    type: branch
+    description: "Telematics and connectivity system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.Telematics
+
+Diagnostics.Systems.TirePressureMonitoring:
+    type: branch
+    description: "Tire pressure monitoring system (TPMS)"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.TirePressureMonitoring
+
+Diagnostics.Systems.Transmission:
+    type: branch
+    description: "Transmission system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.Transmission
+
+Diagnostics.Systems.WasherFluid:
+    type: branch
+    description: "Windshield washer fluid system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.WasherFuel
+
+Diagnostics.Systems.WaterInFuel:
+    type: branch
+    description: "Water-in-fuel branch system"
+#include ../include/DiagnosticSystem.vspec Diagnostics.Systems.WaterInFuel
